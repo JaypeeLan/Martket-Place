@@ -16,3 +16,31 @@
   -webkit-backdrop-filter: blur(0.5px);
   border: 1px solid rgba(7, 125, 212, 0.12);
 }
+
+#form {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 4rem auto;
+}
+
+#form input,
+textarea {
+  outline: none;
+  padding: 3px;
+  border: none;
+  font-family: inherit;
+}
+
+#form input {
+  height: 30px;
+  margin-bottom: 3.5rem;
+}
+
+#form textarea {
+  min-height: 15rem;
+}
+
+#form button {
+  margin-top: 2rem;
+}
