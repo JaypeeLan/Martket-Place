@@ -1,0 +1,35 @@
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Typewriter,
+#home > div > p:nth-child(2) {
+  display: inline;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+#home > div > p:nth-child(3) {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#home > div p:nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.Typewriter__cursor {
+  color: transparent;
+}
+
+/* ==================== */
+#home div:last-child {
+  margin-top: -12rem;
+}
+
+#home div:last-child img {
+  width: 30rem;
+}

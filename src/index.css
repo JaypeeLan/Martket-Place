@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Taviraj:wght@300;400;500;600;700;900&display=swap");
+
+:root {
+  --main-color: #29335c;
+  --sec-color: #5767aa;
+  --deep-red: #db2b39;
+  --text-color: #eee;
+
+  --first-color: #2a287e;
+  --first-color-alt: #67575c;
+  --light-grey: #eddfe7;
+}
+
+html {
+  font-family: "Taviraj", serif;
+  scroll-behavior: smooth;
+  scroll-snap-align: top;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--light-grey);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: inherit !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0.7rem 1.6rem;
+  margin: 5px 0;
+  font-size: 1rem;
+  background-color: var(--sec-color);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--text-color) !important;
+}
+
+section {
+  min-height: calc(100vh - 80px);
+  padding: 2rem 4rem;
+}
+
+#home {
+  min-height: calc(100vh - 80px);
+}
