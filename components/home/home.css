@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: rgb(255, 255, 255);
 }
 
 .Typewriter,
@@ -27,9 +28,29 @@
 
 /* ==================== */
 #home div:last-child {
-  margin-top: -12rem;
+  margin-top: -10rem;
 }
 
 #home div:last-child img {
   width: 30rem;
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    flex-direction: column;
+  }
+
+  #home div:last-child {
+    margin-top: 0rem;
+  }
+
+  #home div:last-child img {
+    width: 20rem;
+  }
+
+  .Typewriter,
+  #home > div > p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 00;
+  }
 }

@@ -2,7 +2,7 @@
 
 :root {
   --main-color: #29335c;
-  --sec-color: #5767aa;
+  --sec-color: #687fdd;
   --deep-red: #db2b39;
   --text-color: #eee;
 
@@ -20,6 +20,14 @@ html {
 body {
   box-sizing: border-box;
   background-color: var(--light-grey);
+  overflow-x: hidden;
+  border: 2px solid red;
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 * {
@@ -53,10 +61,22 @@ button:hover {
 }
 
 section {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh);
   padding: 2rem 4rem;
+  overflow-x: hidden;
 }
 
 #home {
   min-height: calc(100vh - 80px);
+}
+
+@media screen and (max-width: 550px) {
+  section {
+    padding: 0.5rem 3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  section {
+    padding: 2rem 1rem;
+  }
 }

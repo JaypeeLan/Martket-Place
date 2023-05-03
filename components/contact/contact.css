@@ -1,11 +1,12 @@
 #contact {
-  background: white url("../../public/contact-bg.jpg") center center no-repeat;
+  background: white url("/contact-bg.jpg") center center no-repeat;
   background-size: cover;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 50px;
 }
 
 #contact > div {
-  width: 80%;
+  width: 100rem;
+  max-width: 100%;
   margin-top: 100px;
   margin: 0 auto;
   min-height: 80vh;
@@ -43,4 +44,13 @@ textarea {
 
 #form button {
   margin-top: 2rem;
+}
+@media screen and (max-width: 360px) {
+  #form {
+    max-width: 90%;
+  }
+
+  #contact > div {
+    width: 100%;
+  }
 }

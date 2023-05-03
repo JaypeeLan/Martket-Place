@@ -3,6 +3,16 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "./navbar.css";
 
 const Navbar = () => {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 800) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
+  // =============================================== //
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
@@ -10,11 +20,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={colorChange ? "navbar colorChange" : "navbar"}>
         <div className="navbar-container container">
-          <a to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            MarketPlace
-          </a>
+          <div className="navbar-logo">
+            <a to="/" onClick={closeMobileMenu}>
+              MarketPlace
+            </a>
+          </div>
           <div className="menu-icon" onClick={handleClick}>
             {click ? <FaTimes /> : <FaBars />}
           </div>
